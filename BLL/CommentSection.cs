@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    class CommentSection : MasterClass
+    public class CommentSection : MasterClass
     {
         public int CommentSectionId { get; set; }
         public int UploadId { get; set; }
@@ -26,7 +26,7 @@ namespace BLL
         }
 
 
-        public override bool Insert()
+        public override int Insert()
         {
             ConexionDb conection = new ConexionDb();
             int result = 0;
@@ -39,7 +39,7 @@ namespace BLL
             {
                 result = 0;
             }
-            return result > 0;
+            return result;
         }
         //CommentSections will always exist in the same upload which means editing and deleting are not possible
         public override bool Edit()
@@ -83,7 +83,7 @@ namespace BLL
             {
                 FinalOrder = " Order by " + Order;
             }
-            return conection.ObtenerDatos("select " + Fields + " from Presupuestos where " + Condition + " " + FinalOrder + " --");
+            return conection.ObtenerDatos("select " + Fields + " from CommentSections where " + Condition + " " + FinalOrder + " --");
         }
 
         

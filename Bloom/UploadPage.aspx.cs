@@ -31,8 +31,23 @@ namespace Bloom
                     PhotoUpload.SaveAs(Server.MapPath("~/Uploads/") + filename);
                     string url = Server.MapPath("~/Uploads/") + filename;
                     upl.Image = url;
-                    if (upl.Insert())
-                        Label1.Text = "Upload status: File uploaded!";
+                    int result;
+                    try
+                    {
+                        result = upl.Insert();
+                        if (result > 0)
+                        {
+                            Label1.Text = "Upload status: File uploaded!";
+                            CommentSection section = new CommentSection();
+                            section.UploadId = result;
+                            section.Insert();
+                        }
+                    }
+                    catch
+                    {
+                        Label1.Text = "Upload status: An error ocurred during the upload process.";
+                    }
+                    
                 }
                 catch (Exception ex)
                 {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    class Comment : MasterClass
+    public class Comment : MasterClass
     {
         public int CommentId { get; set; }
         public int CommentSectionId { get; set; }
@@ -34,20 +34,20 @@ namespace BLL
             this.Content = Content;
         }
 
-        public override bool Insert()
+        public override int Insert()
         {
             ConexionDb conection = new ConexionDb();
             int result = 0;
 
             try
             {
-                result = Convert.ToInt32(conection.ObtenerValor(String.Format("Insert Into Comments (CommentSectionId,UserId,Created,Content) Values ({0}, {1}, GetDate(),'{2}'); SELECT SCOPE_IDENTITY(); --", this.CommentSectionId, this.UserId, this.Content)));
+                result = Convert.ToInt32(conection.ObtenerValor(string.Format("Insert Into Comments (CommentSectionId,UserId,Created,Comment) Values ({0}, {1}, GetDate(),'{2}'); SELECT SCOPE_IDENTITY(); --", CommentSectionId, this.UserId, this.Content)));
             }
             catch
             {
                 result = 0;
             }
-            return result > 0;
+            return result;
         }
 
         public override bool Edit()
@@ -115,9 +115,14 @@ namespace BLL
             {
                 FinalOrder = " Order by " + Order;
             }
-            return conection.ObtenerDatos("select " + Fields + " from Presupuestos where " + Condition + " " + FinalOrder + " --");
+            return conection.ObtenerDatos("select " + Fields + " from Comments as c where " + Condition + " " + FinalOrder + " --");
         }
 
-        
+        public  DataTable commentSectionList(int commentSectionId)
+        {
+            ConexionDb conection = new ConexionDb();
+            return conection.ObtenerDatos("select u.UserName as Name, c.Comment as Comment  from Comments as c inner join Users as u on u.UserId = c.UserId where CommentSectionId = " + commentSectionId);
+        }
+
     }
 }

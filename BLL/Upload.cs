@@ -36,7 +36,7 @@ namespace BLL
             this.Image = Image;
         }
 
-        public override bool Insert()
+        public override int Insert()
         {
             ConexionDb conection = new ConexionDb();
             int result = 0;
@@ -50,7 +50,7 @@ namespace BLL
             {
                 result = 0;
             }
-            return result > 0;
+            return result;
         }
         public override bool Edit()
         {

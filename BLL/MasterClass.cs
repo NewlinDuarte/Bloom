@@ -10,7 +10,7 @@ namespace BLL
     public abstract class  MasterClass
     {
 
-        public abstract bool Insert();
+        public abstract int Insert();
 
         public abstract bool Edit();
 

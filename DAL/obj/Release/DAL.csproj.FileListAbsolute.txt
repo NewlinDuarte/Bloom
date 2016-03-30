@@ -3,3 +3,8 @@ C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\DAL\bin\Release\DAL.
 C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\DAL\obj\Release\DAL.dll
 C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\DAL\obj\Release\DAL.pdb
+C:\Users\Newlin\Source\Repos\bloom\DAL\bin\Release\DAL.dll
+C:\Users\Newlin\Source\Repos\bloom\DAL\bin\Release\DAL.pdb
+C:\Users\Newlin\Source\Repos\bloom\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Newlin\Source\Repos\bloom\DAL\obj\Release\DAL.dll
+C:\Users\Newlin\Source\Repos\bloom\DAL\obj\Release\DAL.pdb

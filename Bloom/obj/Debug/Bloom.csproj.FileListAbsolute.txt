@@ -36,3 +36,41 @@ C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\Bloom\obj\Debug\Bloo
 C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\Bloom\obj\Debug\Bloom.dll
 C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\Bloom\obj\Debug\Bloom.pdb
 C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\Bloom\bin\Uploads\tuve.png
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\ApplicationInsights.config
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\csc.exe
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\vbc.exe
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\VBCSCompiler.exe
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Uploads\tuve.png
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Bloom.dll.config
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Bloom.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Bloom.pdb
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\BLL.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.AI.Web.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\DAL.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\BLL.pdb
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.AI.Web.xml
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Newlin\Source\Repos\bloom\Bloom\bin\DAL.pdb
+C:\Users\Newlin\Source\Repos\bloom\Bloom\obj\Debug\Bloom.csprojResolveAssemblyReference.cache
+C:\Users\Newlin\Source\Repos\bloom\Bloom\obj\Debug\Bloom.dll
+C:\Users\Newlin\Source\Repos\bloom\Bloom\obj\Debug\Bloom.pdb

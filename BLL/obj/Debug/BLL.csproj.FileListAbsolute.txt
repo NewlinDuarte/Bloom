@@ -5,3 +5,10 @@ C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\bin\Debug\DAL.pd
 C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\obj\Debug\BLL.dll
 C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\obj\Debug\BLL.pdb
+C:\Users\Newlin\Source\Repos\bloom\BLL\bin\Debug\BLL.dll
+C:\Users\Newlin\Source\Repos\bloom\BLL\bin\Debug\BLL.pdb
+C:\Users\Newlin\Source\Repos\bloom\BLL\bin\Debug\DAL.dll
+C:\Users\Newlin\Source\Repos\bloom\BLL\bin\Debug\DAL.pdb
+C:\Users\Newlin\Source\Repos\bloom\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Newlin\Source\Repos\bloom\BLL\obj\Debug\BLL.dll
+C:\Users\Newlin\Source\Repos\bloom\BLL\obj\Debug\BLL.pdb

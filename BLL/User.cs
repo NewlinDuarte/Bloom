@@ -30,7 +30,7 @@ namespace BLL
             this.Password = Password;
         }
 
-        public override bool Insert()
+        public override int Insert()
         {
             ConexionDb conection = new ConexionDb();
             int result = 0;
@@ -43,7 +43,7 @@ namespace BLL
             {
                 result = 0;
             }
-            return result > 0;
+            return result;
         }
 
 
@@ -108,7 +108,7 @@ namespace BLL
             {
                 FinalOrder = " Order by " + Order;
             }
-            return conection.ObtenerDatos("select " + Fields + " from Presupuestos where " + Condition + " " + FinalOrder + " --");
+            return conection.ObtenerDatos("select " + Fields + " from Users where " + Condition + " " + FinalOrder + " --");
 
         }
     }
