@@ -1,0 +1,7 @@
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\bin\Release\BLL.dll
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\bin\Release\BLL.pdb
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\bin\Release\DAL.dll
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\bin\Release\DAL.pdb
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\obj\Release\BLL.dll
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\BLL\obj\Release\BLL.pdb
