@@ -1,0 +1,10 @@
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\UnitTestProject1\bin\Debug\BLL.dll
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\UnitTestProject1\bin\Debug\DAL.dll
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\UnitTestProject1\bin\Debug\BLL.pdb
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\UnitTestProject1\bin\Debug\DAL.pdb
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

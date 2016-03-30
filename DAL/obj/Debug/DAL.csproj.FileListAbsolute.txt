@@ -1,0 +1,4 @@
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\DAL\bin\Debug\DAL.dll
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\DAL\bin\Debug\DAL.pdb
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\DAL\obj\Debug\DAL.dll
+C:\Users\Newlin\Documents\Visual Studio 2015\Projects\Bloom\DAL\obj\Debug\DAL.pdb
