@@ -10,7 +10,7 @@
 namespace Bloom {
     
     
-    public partial class MasterPage1 {
+    public partial class MasterPage {
         
         /// <summary>
         /// head control.

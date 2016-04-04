@@ -133,6 +133,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="UserCreation.aspx" />
+    <Content Include="ViewGalleryPage.aspx" />
     <Content Include="ViewImagePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -168,6 +169,13 @@
     </Compile>
     <Compile Include="UserCreation.aspx.designer.cs">
       <DependentUpon>UserCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGalleryPage.aspx.cs">
+      <DependentUpon>ViewGalleryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewGalleryPage.aspx.designer.cs">
+      <DependentUpon>ViewGalleryPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewImagePage.aspx.cs">
       <DependentUpon>ViewImagePage.aspx</DependentUpon>

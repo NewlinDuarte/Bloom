@@ -99,6 +99,27 @@ namespace BLL
             return dt.Rows.Count > 0;
         }
 
+        public int ConfirmLogin(string UserName, string Password)
+        {
+            ConexionDb conection = new ConexionDb();
+            DataTable dt = new DataTable();
+            try
+            {
+                dt = conection.ObtenerDatos(String.Format("Select * From Users Where UserName = '{0}' AND Password = '{1}' --", UserName, Password));
+                if (dt.Rows.Count > 0)
+                {
+                    this.UserId = (int)dt.Rows[0]["UserId"];
+                    this.UserName = dt.Rows[0]["UserName"].ToString();
+                    this.Password = dt.Rows[0]["Password"].ToString();
+                }
+            }
+            catch
+            {
+                return 0;
+            }
+            return this.UserId;
+        }
+
         public override DataTable List(string Fields, string Condition, string Order)
         {
             ConexionDb conection = new ConexionDb();

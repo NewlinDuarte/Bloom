@@ -16,25 +16,26 @@ namespace Bloom
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             if (!IsPostBack)
             {
-                fillData();
+                int image = Convert.ToInt32(Request.QueryString["ImageId"]);
+                Upload upl = new Upload();
+                upl.Search(image);
+                Image1.ImageUrl = upl.Image;
             }
-           
-        }
-
-        protected void Button1_Click1(object sender, EventArgs e)
-        {
-            Upload upl = new Upload();
-            upl.Search(3);
-            Image1.ImageUrl = upl.Image;
+            CommentSection cs = new CommentSection();           
+            cs.SearchByImage(Convert.ToInt32(Request.QueryString["ImageId"]));
+            fillData(cs.CommentSectionId);
         }
 
         protected void SubmitButton_Click1(object sender, EventArgs e)
         {
+            CommentSection cs = new CommentSection();
             Comment comment = new Comment();
             comment.Content = CommentTextBox.Text.ToString().Trim();
-            comment.CommentSectionId = 1;
+            cs.SearchByImage(Convert.ToInt32(Request.QueryString["ImageId"]));
+            comment.CommentSectionId = cs.CommentSectionId;
             comment.UserId = 1;
             if (comment.Insert() > 0) {
                 CommentTextBox.Text = "";
@@ -52,11 +53,11 @@ namespace Bloom
            
         }
 
-        private void fillData()
+        private void fillData(int CommentSectionId)
         {
             Comment comment = new Comment();
             DataTable dt = new DataTable();
-            dt = comment.commentSectionList(1);
+            dt = comment.commentSectionList(CommentSectionId);
             Repeater1.DataSource = dt;
             Repeater1.DataBind();
 

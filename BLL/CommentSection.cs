@@ -73,6 +73,26 @@ namespace BLL
             return dt.Rows.Count > 0;
         }
 
+        public  bool SearchByImage(int SearchId)
+        {
+            ConexionDb conection = new ConexionDb();
+            DataTable dt = new DataTable();
+
+            try
+            {
+                dt = conection.ObtenerDatos(String.Format("Select * From CommentSections Where UploadId = {0} --", SearchId));
+                if (dt.Rows.Count > 0)
+                {
+                    this.CommentSectionId = (int)dt.Rows[0]["CommentSectionId"];
+                    this.UploadId = (int)dt.Rows[0]["UploadId"];
+                }
+            }
+            catch
+            {
+                return false;
+            }
+            return dt.Rows.Count > 0;
+        }
 
         public override DataTable List(string Fields, string Condition, string Order)
         {
