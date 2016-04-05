@@ -30,8 +30,8 @@ namespace Bloom
                     upl.UserId = (int)Session["userId"];
                     upl.Title = TitleTextBox.Text;
                     string filename = Path.GetFileName(PhotoUpload.FileName);
-                    PhotoUpload.SaveAs(Server.MapPath("~/Uploads/") + g + filename);
-                    string url = Server.MapPath("~/Uploads/") + g + filename;
+                    PhotoUpload.SaveAs(Server.MapPath("~/Uploads/")  + filename);
+                    string url = Server.MapPath("~/Uploads/")  + filename;
                     upl.Image = url;
                     upl.Title = TitleTextBox.Text.Trim();
                     int result;

@@ -21,8 +21,9 @@
         #body {
             padding-bottom: 20em; /* height of footer */
         }
-        row{
-            margin-left:2em;
+
+        row {
+            margin-left: 2em;
         }
 
         footer {
@@ -104,18 +105,18 @@
                 <div class="container-fluid">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
-                    <asp:LoginView runat="server">
-                        <LoggedInTemplate>
-                            <div class='span2 sidebar col-md-3'>
-                                <h3>User options</h3>
-                                <ul class="nav nav-tabs nav-stacked">
-                                    <li><a href="UploadPage.aspx">Upload</a></li>
-                                    <li><a href="ProfilePage.aspx">Profile</a></li>
-                                                                                     
-                                </ul>
-                            </div>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
+                       <asp:LoginView runat="server">
+                            <LoggedInTemplate>
+                                <div class='span2 sidebar col-md-3'>
+                                    <h3>User options</h3>
+                                    <ul class="nav nav-tabs nav-stacked">
+                                        <li><a href="UploadPage.aspx">Upload</a></li>
+                                        <li><a href="ProfilePage.aspx">Profile</a></li>
+
+                                    </ul>
+                                </div>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
                 </div>
             </div>
         </form>

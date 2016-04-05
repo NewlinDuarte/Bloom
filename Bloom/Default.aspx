@@ -53,7 +53,20 @@
             <div class="carousel slide" id="myCarousel">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                    <div class="item active">
+                    <asp:Repeater ID="RecentRepeater" runat="server">
+                        <ItemTemplate>
+                            <div class=" item <%# (Container.ItemIndex == 0 ? "active" : "") %>" style="margin: 1em">
+                                <asp:HyperLink ID="RecentHyperLink1" NavigateUrl='<%#  "~/ViewImagePage.aspx?ImageId=" + Eval("UploadId") %>' runat="server" CssClass="thumbnails">
+                                    <asp:Image ID="RecentImage1" class="img-responsive " ImageUrl='<%# Eval("Img") %>' alt="Chania" runat="server" />
+                                </asp:HyperLink>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+
+
+
+
+                    <%--<div class="item active">
                         <div class="col-lg-4 col-xs-4 col-md-3 col-sm-4 img-container">
                             <asp:HyperLink ID="RecentHyperLink1"  runat="server" CssClass="thumbnails">
                                 <asp:Image ID="RecentImage1" class="img-responsive " alt="Chania" runat="server" />
@@ -82,14 +95,14 @@
                                 <asp:Image ID="RecentImage4"  class="img-responsive" alt="Flower" runat="server" />
                             </asp:HyperLink>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
 
                 <!-- Left and right controls -->
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
                 <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
             </div>
-            <script type="text/javascript">
+            <%--<script type="text/javascript">
                 $('.carousel .item').each(function () {
                     var next = $(this).next();
                     if (!next.length) {
@@ -104,7 +117,7 @@
                         $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
                     }
                 });
-            </script>
+            </script>--%>
         </div>
 
         <!-- Browse Carousel Title -->
@@ -115,9 +128,25 @@
         </div>
         <!-- Random Image Area-->
         <div class="col-md-10">
-            <div class="row" style="margin-bottom:2em">
-                <div class="col-md-6">
-                    <asp:Label ID="RandomLabel1" runat="server"></asp:Label>
+            <div class="col-md-12" style="margin-bottom: 2em">
+                <asp:Repeater ID="RandomRepeater" runat="server">
+                    <ItemTemplate>
+                        <div class="col-md-6">
+                            <asp:Label ID="RandomLabel1" Text='<%# Eval("Title") %>' runat="server"></asp:Label>
+                            <div>
+                                <asp:HyperLink ID="RecentHyperLink1" NavigateUrl='<%#  "~/ViewImagePage.aspx?ImageId=" + Eval("UploadId") %>' runat="server" CssClass="thumbnails">
+                                    <asp:Image ID="RecentImage1" class="img-responsive " ImageUrl='<%# Eval("Img") %>' alt="Chania" runat="server" />
+                                </asp:HyperLink>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+
+<%--<asp:Label ID="RandomLabel1" runat="server"></asp:Label>
                     <div class="col-lg-12 col-xs-12 col-md-12 col-sm-12 img-container">
                         <asp:HyperLink ID="RandomHyperLink1" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
                             <asp:Image ID="RandomImage1" class="img-responsive " alt="Chania" runat="server" />
@@ -132,7 +161,6 @@
                         </asp:HyperLink>
                     </div>
                 </div>
-            </div>
             <div class="row">
                 <div class="col-md-6 ">
                     <asp:Label ID="RandomLabel3" runat="server"></asp:Label>
@@ -149,8 +177,5 @@
                             <asp:Image ID="RandomImage4" class="img-responsive" alt="Flower" runat="server" />
                         </asp:HyperLink>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</asp:Content>
+                </div>--%>
+

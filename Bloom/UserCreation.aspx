@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-12" >
                 <asp:TextBox ID="UserNameTextBox" runat="server"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="UserNameTextBox" ValidationGroup="Save" ForeColor="Red">*</asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="UserNameTextBox" ErrorMessage="RegularExpressionValidator" ForeColor="Red" ValidationExpression="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?&lt;![_.])$" ValidationGroup="Save">Only letters, numbers, _ or .</asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="UserNameTextBox" ErrorMessage="RegularExpressionValidator" ForeColor="Red" ValidationExpression="^(?=.{3,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?&lt;![_.])$" ValidationGroup="Save">Only letters, numbers, _ or .</asp:RegularExpressionValidator>
 
             </div>
         </div>
