@@ -18,21 +18,25 @@ namespace Bloom
                 Random rnd = new Random();
                 Upload upl = new Upload();
                 DataTable dt = new DataTable();
-                dt = upl.List("*", "1=1", "UploadId ASC");
+                dt = upl.ListWithUser();
                 int x = 0;
                 x = rnd.Next(dt.Rows.Count);
+                RandomLabel1.Text = dt.Rows[x]["Title"].ToString();
                 RandomImage1.ImageUrl = dt.Rows[x]["Img"].ToString();
                 RandomHyperLink1.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[x]["UploadId"].ToString();
 
                 x = rnd.Next(dt.Rows.Count);
+                RandomLabel2.Text = dt.Rows[x]["Title"].ToString();
                 RandomImage2.ImageUrl = dt.Rows[x]["Img"].ToString();
                 RandomHyperLink2.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[x]["UploadId"].ToString();
 
                 x = rnd.Next(dt.Rows.Count);
+                RandomLabel3.Text = dt.Rows[x]["Title"].ToString();
                 RandomImage3.ImageUrl = dt.Rows[x]["Img"].ToString();
                 RandomHyperLink3.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[x]["UploadId"].ToString();
 
                 x = rnd.Next(dt.Rows.Count);
+                RandomLabel4.Text = dt.Rows[x]["Title"].ToString();
                 RandomImage4.ImageUrl = dt.Rows[x]["Img"].ToString();
                 RandomHyperLink4.NavigateUrl = "~/ViewImagePage.aspx?ImageId="+ dt.Rows[x]["UploadId"].ToString();
 

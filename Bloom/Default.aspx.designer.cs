@@ -85,6 +85,15 @@ namespace Bloom {
         protected global::System.Web.UI.WebControls.Image RecentImage4;
         
         /// <summary>
+        /// RandomLabel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label RandomLabel1;
+        
+        /// <summary>
         /// RandomHyperLink1 control.
         /// </summary>
         /// <remarks>
@@ -101,6 +110,15 @@ namespace Bloom {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image RandomImage1;
+        
+        /// <summary>
+        /// RandomLabel2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label RandomLabel2;
         
         /// <summary>
         /// RandomHyperLink2 control.
@@ -121,6 +139,15 @@ namespace Bloom {
         protected global::System.Web.UI.WebControls.Image RandomImage2;
         
         /// <summary>
+        /// RandomLabel3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label RandomLabel3;
+        
+        /// <summary>
         /// RandomHyperLink3 control.
         /// </summary>
         /// <remarks>
@@ -137,6 +164,15 @@ namespace Bloom {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image RandomImage3;
+        
+        /// <summary>
+        /// RandomLabel4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label RandomLabel4;
         
         /// <summary>
         /// RandomHyperLink4 control.

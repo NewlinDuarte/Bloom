@@ -27,12 +27,13 @@ namespace Bloom
                     Guid g;
                     g = Guid.NewGuid();                 
                     Upload upl = new Upload();
-                    upl.GalleryId = 1;
+                    upl.UserId = 1;
                     upl.Title = "Test";
                     string filename = Path.GetFileName(PhotoUpload.FileName);
                     PhotoUpload.SaveAs(Server.MapPath("~/Uploads/") + g + filename);
                     string url = Server.MapPath("~/Uploads/") + g + filename;
                     upl.Image = url;
+                    upl.Title = TitleTextBox.Text.Trim();
                     int result;
                     try
                     {

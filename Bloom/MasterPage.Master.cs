@@ -17,10 +17,12 @@ namespace Bloom
         {
             if (!IsPostBack)
             {
+                Session["userId"] = 0;
                 if(!(Session["user"] == null))
                 {
                     var UserName = (HyperLink)LoginView.FindControl("UserName");
                     UserName.Text = "Welcome " + Session["user"].ToString();
+                    var YourImages = (HyperLink)LoginView.FindControl("YourImagesHyperLink");
                 }
             }
         }

@@ -49,7 +49,7 @@ namespace BLL
             bool result = false;
             try
             {
-                result = conection.Ejecutar(String.Format("Update Galleries Set UserId = {0}, Name = '{1}' Where GalleryId = {2} --", this.UserId, this.Name, this.GalleryId));
+                result = conection.Ejecutar(String.Format("Update Galleries Set UserId = {0}, Name = '{1}' Where UserId = {2} --", this.UserId, this.Name, this.GalleryId));
             }
             catch
             {
@@ -63,7 +63,7 @@ namespace BLL
             bool result = false;
             try
             {
-                result = conection.Ejecutar(String.Format("Delete from Galleries Where GalleryId = {0} --", this.GalleryId));
+                result = conection.Ejecutar(String.Format("Delete from Galleries Where UserId = {0} --", this.GalleryId));
             }
             catch
             {
@@ -78,10 +78,10 @@ namespace BLL
 
             try
             {
-                dt = conection.ObtenerDatos(String.Format("Select * From Galleries Where GalleryId = {0} --", SearchId));
+                dt = conection.ObtenerDatos(String.Format("Select * From Galleries Where UserId = {0} --", SearchId));
                 if (dt.Rows.Count > 0)
                 {
-                    this.GalleryId = (int)dt.Rows[0]["GalleryId"];
+                    this.GalleryId = (int)dt.Rows[0]["UserId"];
                     this.UserId = (int)dt.Rows[0]["UserId"];
                     this.Name = dt.Rows[0]["Password"].ToString();
                 }

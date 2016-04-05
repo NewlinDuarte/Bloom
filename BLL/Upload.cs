@@ -14,7 +14,7 @@ namespace BLL
     public class Upload : MasterClass
     {
         public int UploadId { get; set; }
-        public int GalleryId { get; set; }
+        public int UserId { get; set; }
         public DateTime Created { get; set; }
         public string Title { get; set; }
         public string Image { get; set; }
@@ -22,7 +22,7 @@ namespace BLL
         public Upload()
         {
             UploadId = 0;
-            GalleryId = 0;
+            UserId = 0;
             Created = DateTime.Now;
             Title = "";
         }
@@ -30,7 +30,7 @@ namespace BLL
         public Upload(int UploadId, int GalleryId, DateTime Created, string Title, string Image)
         {
             this.UploadId = UploadId;
-            this.GalleryId = GalleryId;
+            this.UserId = GalleryId;
             this.Created = Created;
             this.Title = Title;
             this.Image = Image;
@@ -44,7 +44,7 @@ namespace BLL
             try
             {
 
-                result = Convert.ToInt32(conection.ObtenerValor(string.Format("Insert Into Uploads (GalleryId,Created,Title,Img) Values ({0},GetDate(),'{1}','{2}'); SELECT SCOPE_IDENTITY(); --", GalleryId, Title,Image)));
+                result = Convert.ToInt32(conection.ObtenerValor(string.Format("Insert Into Uploads (UserId,Created,Title,Img) Values ({0},GetDate(),'{1}','{2}'); SELECT SCOPE_IDENTITY(); --", UserId, Title,Image)));
             }
             catch
             {
@@ -58,7 +58,7 @@ namespace BLL
             bool result = false;
             try
             {
-                result = conection.Ejecutar(String.Format("Update Uploads Set GalleryId = '{0}', Title = '{1}' Where UploadId = {2} --", this.GalleryId, this.Title, this.UploadId));
+                result = conection.Ejecutar(String.Format("Update Uploads Set UserId = '{0}', Title = '{1}' Where UploadId = {2} --", this.UserId, this.Title, this.UploadId));
             }
             catch
             {
@@ -93,7 +93,7 @@ namespace BLL
                 if (dt.Rows.Count > 0)
                 {
                     this.UploadId = (int)dt.Rows[0]["UploadId"];
-                    this.GalleryId = (int)dt.Rows[0]["GalleryId"];
+                    this.UserId = (int)dt.Rows[0]["UserId"];
                     this.Created =  (DateTime)dt.Rows[0]["Created"];
                     this.Title = dt.Rows[0]["Title"].ToString();                       
                     this.Image = dt.Rows[0]["Img"].ToString();
@@ -104,6 +104,31 @@ namespace BLL
                 return false;
             }
             return dt.Rows.Count > 0;
+        }
+
+        public DataTable ListWithUser(string searchId = "upl.UserId")
+        {
+            ConexionDb conection = new ConexionDb();
+            DataTable dt = new DataTable();
+
+            try
+            {
+                dt = conection.ObtenerDatos(String.Format("select upl.*, us.UserName from Uploads as upl inner join Users as us on us.UserId = {0} --", searchId));
+                if (dt.Rows.Count > 0)
+                {
+                    this.UploadId = (int)dt.Rows[0]["UploadId"];
+                    this.UserId = (int)dt.Rows[0]["UserId"];
+                    this.Created = (DateTime)dt.Rows[0]["Created"];
+                    this.Title = dt.Rows[0]["Title"].ToString();
+                    this.Image = dt.Rows[0]["Img"].ToString();
+                }
+            }
+            catch
+            {
+                dt.Clear();
+                return dt;
+            }
+            return dt;
         }
 
 

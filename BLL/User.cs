@@ -120,6 +120,8 @@ namespace BLL
             return this.UserId;
         }
 
+        
+
         public override DataTable List(string Fields, string Condition, string Order)
         {
             ConexionDb conection = new ConexionDb();

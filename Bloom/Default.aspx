@@ -55,14 +55,14 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="col-lg-4 col-xs-4 col-md-3 col-sm-4 img-container">
-                            <asp:HyperLink ID="RecentHyperLink1" data-field="2008" data-Id="0" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
+                            <asp:HyperLink ID="RecentHyperLink1" data-Id="0" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
                                 <asp:Image ID="RecentImage1" class="img-responsive " alt="Chania" runat="server" />
                             </asp:HyperLink>
                         </div>
                     </div>
                     <div class="item">
                         <div class="col-lg-4 col-xs-4 col-md-3 col-sm-4 img-container">
-                            <asp:HyperLink ID="RecentHyperLink2" data-Id="0" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
+                            <asp:HyperLink ID="RecentHyperLink2"  NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
                                 <asp:Image ID="RecentImage2" class="img-responsive" alt="Chania" runat="server" />
                             </asp:HyperLink>
                         </div>
@@ -70,16 +70,16 @@
 
                     <div class="item">
                         <div class="col-lg-4 col-xs-4 col-md-3 col-sm-4 img-container">
-                            <asp:HyperLink ID="RecentHyperLink3" data-Id="0" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
-                                <asp:Image ID="RecentImage3" data-Id="0" class="img-responsive" alt="Flower" runat="server" />
+                            <asp:HyperLink ID="RecentHyperLink3"  NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
+                                <asp:Image ID="RecentImage3"  class="img-responsive" alt="Flower" runat="server" />
                             </asp:HyperLink>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="col-lg-4 col-xs-4 col-md-3 col-sm-4 img-container">
-                            <asp:HyperLink ID="RecentHyperLink4" data-Id="0" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
-                                <asp:Image ID="RecentImage4" data-Id="0" class="img-responsive" alt="Flower" runat="server" />
+                            <asp:HyperLink ID="RecentHyperLink4" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
+                                <asp:Image ID="RecentImage4"  class="img-responsive" alt="Flower" runat="server" />
                             </asp:HyperLink>
                         </div>
                     </div>
@@ -115,9 +115,9 @@
         </div>
         <!-- Random Image Area-->
         <div class="col-md-10">
-            <div class="row">
-                <div class="col-md-6 ">
-                    <h4>UserName</h4>
+            <div class="row" style="margin-bottom:2em">
+                <div class="col-md-6">
+                    <asp:Label ID="RandomLabel1" runat="server"></asp:Label>
                     <div class="col-lg-12 col-xs-12 col-md-12 col-sm-12 img-container">
                         <asp:HyperLink ID="RandomHyperLink1" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
                             <asp:Image ID="RandomImage1" class="img-responsive " alt="Chania" runat="server" />
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 ">
-                    <h4>UserName</h4>
+                    <asp:Label ID="RandomLabel2" runat="server"></asp:Label>
                     <div class="col-lg-12 col-xs-12 col-md-12 col-sm-12 img-container">
                         <asp:HyperLink ID="RandomHyperLink2" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
                             <asp:Image ID="RandomImage2" class="img-responsive" alt="Chania" runat="server" />
@@ -135,7 +135,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 ">
-                    <h4>UserName</h4>
+                    <asp:Label ID="RandomLabel3" runat="server"></asp:Label>
                     <div class="col-lg-12 col-xs-12 col-md-12 col-sm-12 img-container">
                         <asp:HyperLink ID="RandomHyperLink3" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
                             <asp:Image ID="RandomImage3" class="img-responsive" alt="Flower" runat="server" />
@@ -143,7 +143,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 ">
-                    <h4>UserName</h4>
+                    <asp:Label ID="RandomLabel4" runat="server"></asp:Label>
                     <div class="col-lg-12 col-xs-12 col-md-12 col-sm-12 img-container">
                         <asp:HyperLink ID="RandomHyperLink4" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
                             <asp:Image ID="RandomImage4" class="img-responsive" alt="Flower" runat="server" />
