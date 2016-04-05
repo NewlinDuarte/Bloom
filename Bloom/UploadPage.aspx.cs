@@ -53,7 +53,7 @@ namespace Bloom
                     }
                     
                 }
-                catch (Exception ex)
+                catch
                 {
                     Label1.Text = "Upload status: The file could not be uploaded.";
                     Label1.Visible = true;
