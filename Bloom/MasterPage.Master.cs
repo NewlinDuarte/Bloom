@@ -17,12 +17,10 @@ namespace Bloom
         {
             if (!IsPostBack)
             {
-                Session["userId"] = 0;
                 if(!(Session["user"] == null))
                 {
                     var UserName = (HyperLink)LoginView.FindControl("UserName");
                     UserName.Text = "Welcome " + Session["user"].ToString();
-                    var YourImages = (HyperLink)LoginView.FindControl("YourImagesHyperLink");
                 }
             }
         }
@@ -35,9 +33,9 @@ namespace Bloom
             
             if(user.ConfirmLogin(UserNameTextBox.Text, PasswordTextBox.Text)>0)
             {
-                FormsAuthentication.RedirectFromLoginPage(user.UserName, true);
                 Session["user"] = user.UserName;
                 Session["userId"] = user.UserId;
+                FormsAuthentication.RedirectFromLoginPage(user.UserName, true);             
             }
 
         }

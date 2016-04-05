@@ -33,10 +33,11 @@ namespace Bloom
         {
             CommentSection cs = new CommentSection();
             Comment comment = new Comment();
+            var CommentTextBox = (TextBox)LoginView1.FindControl("CommentTextBox");
             comment.Content = CommentTextBox.Text.ToString().Trim();
-            cs.SearchByImage(Convert.ToInt32(Request.QueryString["ImageId"]));
+            cs.SearchByImage(Convert.ToInt32(Request.QueryString["ImageId"]));           
             comment.CommentSectionId = cs.CommentSectionId;
-            comment.UserId = 1;
+            comment.UserId = (int)Session["userId"];
             if (comment.Insert() > 0) {
                 CommentTextBox.Text = "";
             }          

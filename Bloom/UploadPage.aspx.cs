@@ -27,8 +27,8 @@ namespace Bloom
                     Guid g;
                     g = Guid.NewGuid();                 
                     Upload upl = new Upload();
-                    upl.UserId = 1;
-                    upl.Title = "Test";
+                    upl.UserId = (int)Session["userId"];
+                    upl.Title = TitleTextBox.Text;
                     string filename = Path.GetFileName(PhotoUpload.FileName);
                     PhotoUpload.SaveAs(Server.MapPath("~/Uploads/") + g + filename);
                     string url = Server.MapPath("~/Uploads/") + g + filename;
@@ -49,12 +49,14 @@ namespace Bloom
                     catch
                     {
                         Label1.Text = "Upload status: An error ocurred during the upload process.";
+                        Label1.Visible = true;
                     }
                     
                 }
                 catch (Exception ex)
                 {
-                    Label1.Text = "Upload status: The file could not be uploaded. The following error occured: " + ex.Message;
+                    Label1.Text = "Upload status: The file could not be uploaded.";
+                    Label1.Visible = true;
                 }
 
 

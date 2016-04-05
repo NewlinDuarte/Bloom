@@ -17,7 +17,7 @@ namespace Bloom
 
         protected void ConfirmButton_Click(object sender, EventArgs e)
         {
-            if(PasswordTextBox.Text.Trim() == ConfirmPasswordTextBox.Text.Trim())
+            if(CompareValidator1.IsValid && RegularExpressionValidator2.IsValid && RegularExpressionValidator3.IsValid)
             {
                 User user = new User();
                 user.UserName = UserNameTextBox.Text.Trim();
