@@ -18,7 +18,7 @@ namespace DAL
 
         public ConexionDb()
         {
-            string connstr = "Data Source=bloomproject.database.windows.net;Initial Catalog=BloomDb;Integrated Security=False;User ID=Newlin;Password=********;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connstr = "Data Source=bloomproject.database.windows.net;Initial Catalog=BloomDb;User ID=Newlin;Password=Noclaf313";
                 //ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
             con = new SqlConnection(connstr);
             Cmd = new SqlCommand();
