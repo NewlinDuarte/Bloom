@@ -55,14 +55,14 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="col-lg-4 col-xs-4 col-md-3 col-sm-4 img-container">
-                            <asp:HyperLink ID="RecentHyperLink1" data-Id="0" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
+                            <asp:HyperLink ID="RecentHyperLink1"  runat="server" CssClass="thumbnails">
                                 <asp:Image ID="RecentImage1" class="img-responsive " alt="Chania" runat="server" />
                             </asp:HyperLink>
                         </div>
                     </div>
                     <div class="item">
                         <div class="col-lg-4 col-xs-4 col-md-3 col-sm-4 img-container">
-                            <asp:HyperLink ID="RecentHyperLink2"  NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
+                            <asp:HyperLink ID="RecentHyperLink2"   runat="server" CssClass="thumbnails">
                                 <asp:Image ID="RecentImage2" class="img-responsive" alt="Chania" runat="server" />
                             </asp:HyperLink>
                         </div>
@@ -70,7 +70,7 @@
 
                     <div class="item">
                         <div class="col-lg-4 col-xs-4 col-md-3 col-sm-4 img-container">
-                            <asp:HyperLink ID="RecentHyperLink3"  NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
+                            <asp:HyperLink ID="RecentHyperLink3"   runat="server" CssClass="thumbnails">
                                 <asp:Image ID="RecentImage3"  class="img-responsive" alt="Flower" runat="server" />
                             </asp:HyperLink>
                         </div>
@@ -78,7 +78,7 @@
 
                     <div class="item">
                         <div class="col-lg-4 col-xs-4 col-md-3 col-sm-4 img-container">
-                            <asp:HyperLink ID="RecentHyperLink4" NavigateUrl="~/ViewImagePage.aspx" runat="server" CssClass="thumbnails">
+                            <asp:HyperLink ID="RecentHyperLink4"  runat="server" CssClass="thumbnails">
                                 <asp:Image ID="RecentImage4"  class="img-responsive" alt="Flower" runat="server" />
                             </asp:HyperLink>
                         </div>
