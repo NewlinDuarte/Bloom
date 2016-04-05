@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="Bloom" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Newlin\\Documents\\Visual\ Studio\ 2015\\Projects\\Bloom\\Bloom\\obj\\Release\\Package\\PackageTmp$" />
-    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Newlin\\Documents\\Visual\ Studio\ 2015\\Projects\\Bloom\\Bloom\\obj\\Release\\Package\\PackageTmp$" />
+  <parameter name="IIS Web Application Name" description="" value="Bloom20160405045419" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Newlin\\Source\\Repos\\bloom\\Bloom\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Newlin\\Source\\Repos\\bloom\\Bloom\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
-  <parameter name="ConStr-Web.config Connection String" description="" value="Data Source=.\SQLEXPRESS;Initial Catalog=BloomDb;Integrated Security=True" tags="">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Newlin\\Documents\\Visual\ Studio\ 2015\\Projects\\Bloom\\Bloom\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConStr']/@connectionString" />
+  <parameter name="ConStr-Web.config Connection String" description="" value="Data Source=bloomdbserver.database.windows.net;Initial Catalog=BloomDb;Persist Security Info=True;User ID=Newlin;Password=Noclaf313" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Newlin\\Source\\Repos\\bloom\\Bloom\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConStr']/@connectionString" />
   </parameter>
 </parameters>

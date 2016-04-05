@@ -117,7 +117,7 @@
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="Properties\PublishProfiles\Bloom20160329073341 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Bloom20160405045419 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
