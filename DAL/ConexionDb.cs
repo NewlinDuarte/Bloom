@@ -18,7 +18,7 @@ namespace DAL
 
         public ConexionDb()
         {
-            string connstr = "Data Source=.\\SQLEXPRESS;Initial Catalog=BloomDb;Integrated Security=True";
+            string connstr = "Data Source=bloomproject.database.windows.net;Initial Catalog=BloomDb;Integrated Security=False;User ID=Newlin;Password=********;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
                 //ConfigurationManager.ConnectionStrings["ConStr"].ConnectionString;
             con = new SqlConnection(connstr);
             Cmd = new SqlCommand();
