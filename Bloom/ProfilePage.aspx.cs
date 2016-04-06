@@ -61,7 +61,7 @@ namespace Bloom
                 User user = new User();
                 user.Search((int)Session["userId"]);
 
-                if (CurrentPasswordTextBox.Text.Trim() == user.Password && NewPasswordTextBox.Text.Trim() == ConfirmPasswordTextBox.Text.Trim())
+                if (CurrentPasswordTextBox.Text.Trim() == user.Password && CompareValidator1.IsValid && RegularExpressionValidator2.IsValid && RequiredFieldValidator1.IsValid )
                 {
                     user.Password = NewPasswordTextBox.Text.Trim();
                     if (user.Edit())

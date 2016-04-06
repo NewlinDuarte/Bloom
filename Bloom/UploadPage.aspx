@@ -15,7 +15,7 @@
             </div>
             <div class="col-md-6">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="PhotoUpload" ErrorMessage="RequiredFieldValidator" Visible="false" ValidationGroup="Upload"></asp:RequiredFieldValidator>
-                <asp:FileUpload ID="PhotoUpload" class="btn btn-info" runat="server" />
+                <asp:FileUpload ID="PhotoUpload" accept="image/png, image/jpeg" class="btn btn-info" runat="server" />
 
             </div>
             <div class="col-md-6">

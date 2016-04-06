@@ -20,58 +20,27 @@ namespace Bloom
                 DataTable dt = new DataTable();
                 dt = upl.ListWithUser();
 
+                if(dt.Rows.Count < 4)
+                {
+                    dt.Columns.Add("UploadId", typeof(int));
+                    dt.Columns.Add("UserId", typeof(int));
+                    dt.Columns.Add("Title", typeof(string));
+                    dt.Columns.Add("Img", typeof(string));
+                    while (dt.Rows.Count < 4)
+                    {
+                        var hyperlink = (HyperLink)RecentRepeater.FindControl("RecentHyperLink1");
+                        hyperlink.NavigateUrl = "#";
+                        var hyperlink1 = (HyperLink)RandomRepeater.FindControl("RandomHyperLink1");
+                        hyperlink1.NavigateUrl = "#";
+                        dt.Rows.Add(0,0,"","", "http://placehold.it/350x150");
+                    }
+                }
                 RecentRepeater.DataSource = dt;
                 RecentRepeater.DataBind();
                 RandomRepeater.DataSource = dt;
                 RandomRepeater.DataBind();
 
 
-                //if (dt.Rows.Count > 3)
-                //{
-                //    int x = 0;
-                //    x = rnd.Next(dt.Rows.Count);
-                //    RandomLabel1.Text = dt.Rows[x]["Title"].ToString();
-                //    RandomImage1.ImageUrl = dt.Rows[x]["Img"].ToString();
-                //    RandomHyperLink1.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[x]["UploadId"].ToString();
-
-                //    x = rnd.Next(dt.Rows.Count);
-                //    RandomLabel2.Text = dt.Rows[x]["Title"].ToString();
-                //    RandomImage2.ImageUrl = dt.Rows[x]["Img"].ToString();
-                //    RandomHyperLink2.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[x]["UploadId"].ToString();
-
-                //    x = rnd.Next(dt.Rows.Count);
-                //    RandomLabel3.Text = dt.Rows[x]["Title"].ToString();
-                //    RandomImage3.ImageUrl = dt.Rows[x]["Img"].ToString();
-                //    RandomHyperLink3.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[x]["UploadId"].ToString();
-
-                //    x = rnd.Next(dt.Rows.Count);
-                //    RandomLabel4.Text = dt.Rows[x]["Title"].ToString();
-                //    RandomImage4.ImageUrl = dt.Rows[x]["Img"].ToString();
-                //    RandomHyperLink4.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[x]["UploadId"].ToString();
-
-
-                //    RecentImage1.ImageUrl = dt.Rows[0]["Img"].ToString();
-                //    RecentHyperLink1.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[0]["UploadId"].ToString();
-
-                //    RecentImage2.ImageUrl = dt.Rows[1]["Img"].ToString();
-                //    RecentHyperLink2.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[1]["UploadId"].ToString();
-
-                //    RecentImage3.ImageUrl = dt.Rows[2]["Img"].ToString();
-                //    RecentHyperLink3.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[2]["UploadId"].ToString();
-
-                //    RecentImage4.ImageUrl = dt.Rows[3]["Img"].ToString();
-                //    RecentHyperLink4.NavigateUrl = "~/ViewImagePage.aspx?ImageId=" + dt.Rows[3]["UploadId"].ToString();
-                //}
-                //else {
-                //    RandomImage1.ImageUrl = "http://placehold.it/350x150";
-                //    RandomImage2.ImageUrl = "http://placehold.it/350x150";
-                //    RandomImage3.ImageUrl = "http://placehold.it/350x150";
-                //    RandomImage4.ImageUrl = "http://placehold.it/350x150";
-
-                    //RecentImage1.ImageUrl = "http://placehold.it/350x150";
-                    //RecentImage2.ImageUrl = "http://placehold.it/350x150";
-                    //RecentImage3.ImageUrl = "http://placehold.it/350x150";
-                    //RecentImage4.ImageUrl = "http://placehold.it/350x150";
 
                 }
                 

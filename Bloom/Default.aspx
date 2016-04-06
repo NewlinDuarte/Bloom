@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
+
         .carousel-inner .active.left {
             left: -33%;
         }

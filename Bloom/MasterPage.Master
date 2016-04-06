@@ -9,8 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <style type="text/css">
+        .col-md-9 {
+            left:auto;
+            top:auto;
+        }
+
         html, body {
             height: 100%;
+            left:auto;
         }
 
         #holder {

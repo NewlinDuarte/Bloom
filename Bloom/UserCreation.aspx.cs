@@ -17,7 +17,7 @@ namespace Bloom
 
         protected void ConfirmButton_Click(object sender, EventArgs e)
         {
-            if(CompareValidator1.IsValid && RegularExpressionValidator2.IsValid && RegularExpressionValidator3.IsValid)
+            if(RequiredFieldValidator1.IsValid && RequiredFieldValidator2.IsValid && RequiredFieldValidator3.IsValid && CompareValidator1.IsValid && RegularExpressionValidator2.IsValid && RegularExpressionValidator3.IsValid)
             {
                 User user = new User();
                 user.UserName = UserNameTextBox.Text.Trim();
