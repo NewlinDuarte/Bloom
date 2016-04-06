@@ -25,7 +25,7 @@
         }
 
         #body {
-            padding-bottom: 20em; /* height of footer */
+            padding-bottom: 10em; /* height of footer */
         }
 
         row {
@@ -33,7 +33,7 @@
         }
 
         footer {
-            height: 100px;
+            height: 10em;
             width: 100%;
             position: absolute;
             left: 0;
@@ -135,6 +135,8 @@
                 <div class="col-md-10 col-md-offset-2">
                     <h4 style="color: white">Made by student Newlin Duarte.</h4>
                     <h4 style="color: white">Based on Bootstrap. Icons from Font Awesome. Web fonts from Google.</h4>
+                    <h4>Theme made by Thomas Park. Contact him at thomas@bootswatch.com.</h4>
+                  
                 </div>
             </div>
         </footer>
